@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+ext.manifestFile = file('src/main/AndroidManifest.xml');
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.1"
+
+
+    defaultConfig {
+        applicationId "com.example.ulugbek.myapplication"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+//def AAVersion = '2.7.1'
+
+dependencies {
+//    apt "com.googlecode.androidannotations:androidannotations:$AAVersion"
+//    compile "com.googlecode.androidannotations:androidannotations-api:$AAVersion"
+    compile 'com.android.support:support-v4:+'
+    compile 'com.android.support:appcompat-v7:+'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}

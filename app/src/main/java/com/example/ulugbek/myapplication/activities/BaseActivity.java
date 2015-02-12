@@ -1,0 +1,37 @@
+package com.example.ulugbek.myapplication.activities;
+
+import android.support.v7.app.ActionBarActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+
+import com.example.ulugbek.myapplication.R;
+import com.example.ulugbek.myapplication.fragment.ProgressDialogFragment;
+
+/**
+ * Created by Ulugbek on 09.02.2015.
+ */
+public class BaseActivity extends ActionBarActivity {
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.item_home: break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    protected void showDialog() {
+        ProgressDialogFragment dialogFragment = new ProgressDialogFragment(BaseActivity.this, "progress");
+
+    }
+
+    protected void dismissDialog(){
+        getS
+    }
+}

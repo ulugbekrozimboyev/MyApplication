@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapplication="http://schemas.android.com/apk/res-auto"
+    >
+    <!--android:icon="@drawable/ic_navigation_accept"-->
+    <item
+        android:title="Home"
+        android:id="@+id/item_home"
+        myapplication:showAsAction="never" />
+
+    <item
+        android:title="Profile"
+        android:id="@+id/item_profile"
+        myapplication:showAsAction="never" />
+
+    <item
+        android:title="Chats"
+        android:id="@+id/item_chats"
+        myapplication:showAsAction="never" />
+
+</menu>
