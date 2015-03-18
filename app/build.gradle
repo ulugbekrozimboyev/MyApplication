@@ -8,11 +8,11 @@ android {
 
 
     defaultConfig {
-        applicationId "com.example.ulugbek.myapplication"
-        minSdkVersion 14
+        applicationId "uz.autostar"
+        minSdkVersion 16
         targetSdkVersion 21
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
     }
     buildTypes {
         release {
